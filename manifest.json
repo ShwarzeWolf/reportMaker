@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "ReportMaker",
+  "description": "Extension to make reports",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://добровольцыроссии.рф/organizations/*"],
+      "js": ["content_script.js"]
+      }
+    ],
+
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}

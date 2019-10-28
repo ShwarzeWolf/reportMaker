@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Make a report</title>
+    <script src ="popup.js"></script>
+</head>
+<body>
+<h1>Report Maker</h1>
+<div id="additionalInformation">
+    <p>Короткое имя:</p>
+    <input type="text" id="shortName">
+
+    <p>Категория:</p>
+    <input type="radio" id="categoryInner" name="category">
+    <label for="categoryInner">Внуреннее</label>
+
+    <input type="radio" id="categoryOuter" name="category">
+    <label for="categoryOuter">Внешнее</label>
+
+    <p>Публичность:</p>
+    <input type="radio" id="publicityOpen" name="publicity">
+    <label for="publicityOpen">Открытое</label>
+
+    <input type="radio" id="publicityClosed" name="publicity">
+    <label for="publicityClosed">Закрытое</label>
+
+    <br><br>
+    <button id="createReport">Make a report</button>
+</div>
+</body>
+</html>
